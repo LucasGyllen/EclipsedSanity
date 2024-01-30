@@ -1,0 +1,370 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.18f1 (d29bea25151d) revision 13802474'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16314 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/UnityProjects/EclipsedSanity/HorrorSurvival
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+54701
+Successfully changed project path to: D:/UnityProjects/EclipsedSanity/HorrorSurvival
+D:/UnityProjects/EclipsedSanity/HorrorSurvival
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [42916] Host "[IP] 192.168.1.54 [Port] 0 [Flags] 2 [Guid] 4204066056 [EditorId] 4204066056 [Version] 1048832 [Id] WindowsEditor(7,N-Lucas1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [42916] Host "[IP] 192.168.1.54 [Port] 0 [Flags] 2 [Guid] 4204066056 [EditorId] 4204066056 [Version] 1048832 [Id] WindowsEditor(7,N-Lucas1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 7.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.18f1 (d29bea25151d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/EclipsedSanity/HorrorSurvival/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2488)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013539 seconds.
+- Loaded All Assemblies, in  0.414 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.324 seconds
+Domain Reload Profiling: 735ms
+	BeginReloadAssembly (129ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (77ms)
+	LoadAllAssembliesAndSetupDomain (149ms)
+		LoadAssemblies (126ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (147ms)
+			TypeCache.Refresh (145ms)
+				TypeCache.ScanAssembly (131ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (325ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (256ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (172ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.727 seconds
+Refreshing native plugins compatible for Editor in 2.10 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.713 seconds
+Domain Reload Profiling: 1437ms
+	BeginReloadAssembly (174ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (453ms)
+		LoadAssemblies (331ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (229ms)
+			TypeCache.Refresh (207ms)
+				TypeCache.ScanAssembly (192ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (714ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (544ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (424ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 3.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3528 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (1.2 MB). Loaded Objects now: 4016.
+Memory consumption went from 165.6 MB to 164.4 MB.
+Total: 6.275200 ms (FindLiveObjects: 0.611200 ms CreateObjectMapping: 0.334500 ms MarkObjects: 4.762400 ms  DeleteObjects: 0.565900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 420328.747115 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/NeonLift.prefab
+  artifactKey: Guid(f8fe4f6665cefc84bb6e1a64885a8190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/NeonLift.prefab using Guid(f8fe4f6665cefc84bb6e1a64885a8190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1aa70b55fd340b0ddc2c47819afe882') in 0.123552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/BigKettle.prefab
+  artifactKey: Guid(ce36a5a312ab7ac45b778aff176df321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/BigKettle.prefab using Guid(ce36a5a312ab7ac45b778aff176df321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb5246b634c65b67ee7983443300b369') in 0.070360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/BedFeather.prefab
+  artifactKey: Guid(ba38b70a000a84e43a648a99b4e3d26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/BedFeather.prefab using Guid(ba38b70a000a84e43a648a99b4e3d26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ef46201c570e9d6372a60aa1993adc') in 0.025027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/PosterHuman.prefab
+  artifactKey: Guid(de73a68374813224d9a0717c5b75fc05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/PosterHuman.prefab using Guid(de73a68374813224d9a0717c5b75fc05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7614f8e406da42dfab1db7321e6e647') in 0.048184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Window_DayRoom.prefab
+  artifactKey: Guid(d7d796f2a9e41944c89ffdd5c4119286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Window_DayRoom.prefab using Guid(d7d796f2a9e41944c89ffdd5c4119286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bd628b06858b47f98e90a9b3ad0f0c8') in 0.024412 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/SingleLight.prefab
+  artifactKey: Guid(e8f4841062f3b454da2ee4180bd62bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/SingleLight.prefab using Guid(e8f4841062f3b454da2ee4180bd62bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1feaad5a6bd034c622b35473cdaff337') in 0.038562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Kettle.prefab
+  artifactKey: Guid(cc81e0db4097ad04092c19b084523b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Kettle.prefab using Guid(cc81e0db4097ad04092c19b084523b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a5f61f8756250d8c3e25f14b3c3275e') in 0.060190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Fridge.prefab
+  artifactKey: Guid(b45e9c0c0f92fa9458011919a208ff19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Fridge.prefab using Guid(b45e9c0c0f92fa9458011919a208ff19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5baa1d8673a62c66e0ccafed410131c') in 0.076053 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/MorgueWheelBed.prefab
+  artifactKey: Guid(e17057c699b73604c9d45df68ce8610e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/MorgueWheelBed.prefab using Guid(e17057c699b73604c9d45df68ce8610e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9842d4dc9df738e17c2b3d6dd88def98') in 0.052546 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Plate_Broken.prefab
+  artifactKey: Guid(045213b78a20cdf45a1e502386562c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Plate_Broken.prefab using Guid(045213b78a20cdf45a1e502386562c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9d1e2dcdb35102a2f786249e710633') in 0.021410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Cupboard.prefab
+  artifactKey: Guid(6a166fb671afe1046976d33f2e64e26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Cupboard.prefab using Guid(6a166fb671afe1046976d33f2e64e26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7d2580978fa8ac5bb283958c652775') in 0.081400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 42
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/CanOld_Damaged.prefab
+  artifactKey: Guid(a87dd23a0510278409781030772717e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/CanOld_Damaged.prefab using Guid(a87dd23a0510278409781030772717e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b057a5458d5bfbc748d73150a09c768') in 0.032402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/TableWhiteKitchen.prefab
+  artifactKey: Guid(0f96da9664a6d9342bc8d0a3254c96bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/TableWhiteKitchen.prefab using Guid(0f96da9664a6d9342bc8d0a3254c96bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d35368dfe674af76ebaab7579b6c6d3') in 0.051395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/MirrorShelf.prefab
+  artifactKey: Guid(51d7dfbf96b72654ea7afc3829c6bd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/MirrorShelf.prefab using Guid(51d7dfbf96b72654ea7afc3829c6bd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29d2037a1f8b61cbe607928234bb9d6') in 0.034462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Toilet.prefab
+  artifactKey: Guid(46c720c56146e4848814a54b4715d58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Toilet.prefab using Guid(46c720c56146e4848814a54b4715d58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ba4d18f376887c1383660335c8bb3c') in 0.025440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Bath.prefab
+  artifactKey: Guid(306b28a0b192dc6469686df4b6c4340d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Bath.prefab using Guid(306b28a0b192dc6469686df4b6c4340d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d0827680131c2bf42eaa7931ba860b') in 0.060767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Sofa.prefab
+  artifactKey: Guid(3904b9d628543824ab5d604bef929475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Sofa.prefab using Guid(3904b9d628543824ab5d604bef929475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33eedf42857069fde1a669cab8dbb987') in 0.099213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Box_V2.prefab
+  artifactKey: Guid(140cc98f01ed4344a89a50d8f1db3049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Box_V2.prefab using Guid(140cc98f01ed4344a89a50d8f1db3049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982ab05e2bfce673c96c542fd65821ac') in 0.052966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Pipe.prefab
+  artifactKey: Guid(38b52f42d6dafda489a10a25af194f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Pipe.prefab using Guid(38b52f42d6dafda489a10a25af194f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c4c7e30601640643f3154446e8f950') in 0.054828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/FilmProjector.prefab
+  artifactKey: Guid(c8cedd07f9c0b814b9e331a2d713786f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/FilmProjector.prefab using Guid(c8cedd07f9c0b814b9e331a2d713786f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a0d73082a51a6033a2a28efe3bd505') in 0.061071 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Plate.prefab
+  artifactKey: Guid(8296ba5dc86a96b4aa243dbff2e08571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Plate.prefab using Guid(8296ba5dc86a96b4aa243dbff2e08571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c98f983e03828367e5d0bae9b468d5b7') in 0.021977 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/TableSchool.prefab
+  artifactKey: Guid(fbf0f9b9b157bff4fb5b0e275e6ae2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/TableSchool.prefab using Guid(fbf0f9b9b157bff4fb5b0e275e6ae2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b6558d9b9dceea52bab523e669ab94') in 0.043344 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Abandoned_Asylum/Prefabs/Statue.prefab
+  artifactKey: Guid(4e12d279753093a40a6c88deea619dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Abandoned_Asylum/Prefabs/Statue.prefab using Guid(4e12d279753093a40a6c88deea619dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e80d236db9aceaca58493013986ca2cd') in 0.064208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
