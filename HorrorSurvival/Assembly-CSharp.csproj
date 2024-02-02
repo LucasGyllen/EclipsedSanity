@@ -57,27 +57,34 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\EToOpenDoorController.cs" />
     <Compile Include="Assets\Vitals\Demo\Input\Input.cs" />
+    <Compile Include="Assets\Scripts\PlayerLookingAtObject.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\Stamina.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\VitalsConfig.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsUI\VitalsUIBind.cs" />
+    <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\Chest.cs" />
     <Compile Include="Assets\Scripts\KeyRaycast.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\VitalsEventWrapper.cs" />
+    <Compile Include="Assets\Scripts\PlayerShoot.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\Interfaces\IVitalsComponent.cs" />
     <Compile Include="Assets\Scripts\TriggerDoorController.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\EnemyDamager.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\EnemySpawner.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\Interfaces\IRegeneration.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\HealthDemoScene\DemoCharacter.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\gunData.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\HealthDemoScene\VitalsDemoScript.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\RegenerationBase.cs" />
+    <Compile Include="Assets\Scripts\WeaponSwaying.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\StaminaRegeneration.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\VitalsHook.cs" />
     <Compile Include="Assets\Piloto Studio\Readme\Scripts\ReadmeBehaviour.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\HealthRegeneration.cs" />
     <Compile Include="Assets\Scripts\KeyDoorController.cs" />
+    <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\EnemyDemo.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\VitalsBase.cs" />
+    <Compile Include="Assets\Scripts\ObjectLookedAtByPlayer.cs" />
     <Compile Include="Assets\Scripts\KeyItemController.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\CanvasLook.cs" />
     <Compile Include="Assets\Vitals\Scripts\Utility\VitalsSaveUtility.cs" />
@@ -87,6 +94,7 @@
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\Health.cs" />
     <Compile Include="Assets\Scripts\KeyInventory.cs" />
     <Compile Include="Assets\Vitals\Scripts\Utility\VitalsUtility.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
     <Compile Include="Assets\Scripts\NumberGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
