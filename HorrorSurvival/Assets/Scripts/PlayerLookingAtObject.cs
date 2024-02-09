@@ -4,14 +4,10 @@ using UnityEngine;
 
 public interface iGazeReceiver
 {
-    /// <summary>
-    /// Should be called when the object is being looked at
-    /// </summary>
+    // Should be called when the object is being looked at
     void GazingUpon();
 
-    /// <summary>
-    /// Should be called when the object is no longer being looked at
-    /// </summary>
+    // Should be called when the object is no longer being looked at
     void NotGazingUpon();
 }
 

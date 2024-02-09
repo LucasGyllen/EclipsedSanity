@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class EToOpenDoorController : MonoBehaviour, IInteractable
 {
-    private Animator doorAnim;
+    [SerializeField] private Animator doorAnim;
 
     private bool doorOpen = false;
-
-    [SerializeField] private GameObject showEToOpenDoor = null;
 
     private void Awake()
     {
@@ -31,15 +29,6 @@ public class EToOpenDoorController : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Debug.Log(Random.Range(0, 100));
         PlayAnimation();
-        //StartCoroutine(ShowDoorLocked());
     }
-
-    /*IEnumerator ShowDoorLocked()
-    {
-        showEToOpenDoor.SetActive(true);
-        yield return new WaitForSeconds(timeToShowUI);
-        showEToOpenDoor.SetActive(false);
-    }*/
 }

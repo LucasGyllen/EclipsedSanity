@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Target : MonoBehaviour, IDamageable
 {
-    private float health = 100f;
+    [SerializeField] private float health = 100f;
 
     public void Damage(float damage)
     {
+        Debug.Log($"Enemy took {damage} damage.");
+        Debug.Log("health is now: " + health);
         health -= damage;
         if (health <= 0)
         {

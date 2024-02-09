@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class TestObject : MonoBehaviour, iGazeReceiver
+public class ObjectLookedAtByPlayer : MonoBehaviour, iGazeReceiver
 {
     private bool isGazingUpon;
 
@@ -13,7 +14,7 @@ public class TestObject : MonoBehaviour, iGazeReceiver
         {
             UIText.SetActive(true);
         }
-        else if (!isGazingUpon)
+        else
         {
             UIText.SetActive(false);
         }

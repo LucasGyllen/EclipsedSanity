@@ -56,83 +56,169 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\EToOpenDoorController.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Vitals\Demo\Input\Input.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerLookingAtObject.cs" />
+    <Compile Include="Assets\Enemies\CrabMonster\LB3DGameManager.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\Pistol.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\Stamina.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\UseChest.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSRandomRotateAngle.cs" />
+    <Compile Include="Assets\PBS Barrels and Crates\Scripts\DestroyBelowY.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPS_RigidbodyFirstPersonController.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\VitalsConfig.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsUI\VitalsUIBind.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
-    <Compile Include="Assets\Scripts\Chest.cs" />
-    <Compile Include="Assets\Scripts\KeyRaycast.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\KeyPickUp.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\CursorControl.cs" />
+    <Compile Include="Assets\PBS Barrels and Crates\Scripts\DestroyProps\DestroyOnShot.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\VitalsEventWrapper.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Scripts\PlayerShoot.cs" />
+    <Compile Include="Assets\Scripts\KeyDoor\KeyDoorController.cs" />
+    <Compile Include="Assets\PBS Barrels and Crates\Scripts\ExplodeBarrel.cs" />
+    <Compile Include="Assets\PBS Barrels and Crates\Scripts\MoveCamForward.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\Interfaces\IVitalsComponent.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\Death-Main-Menu.cs" />
     <Compile Include="Assets\Scripts\TriggerDoorController.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
+    <Compile Include="Assets\Scripts\Aim.cs" />
+    <Compile Include="Assets\Scripts\KeyDoor\KeyRaycast.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\EnemyDamager.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\EnemySpawner.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\Interfaces\IRegeneration.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPSDemoReactivator.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\HealthDemoScene\DemoCharacter.cs" />
+    <Compile Include="Assets\PBS Barrels and Crates\Scripts\DestroyOnClick.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPS_MouseLook.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSLightCurves.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\gunData.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\Door.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\HealthDemoScene\VitalsDemoScript.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\LanturnPickUp.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\RegenerationBase.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Rendering\FPS_CustomLight.cs" />
+    <Compile Include="Assets\PBS Barrels and Crates\Scripts\DestroyOnHit.cs" />
     <Compile Include="Assets\Scripts\WeaponSwaying.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\StaminaRegeneration.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\VitalsHook.cs" />
+    <Compile Include="Assets\PBS Barrels and Crates\Scripts\DestroyProps\ExploadingBarrel.cs" />
+    <Compile Include="Assets\PBS Barrels and Crates\Scripts\CrateGridBuilder.cs" />
+    <Compile Include="Assets\Scripts\CupboardManager.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
     <Compile Include="Assets\Piloto Studio\Readme\Scripts\ReadmeBehaviour.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\HealthRegeneration.cs" />
-    <Compile Include="Assets\Scripts\KeyDoorController.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPS_Decal.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPSDemoGUI.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Rendering\FPS_UseLight.cs" />
+    <Compile Include="Assets\Enemies\FourLeggedMonster\Horror_creature6_v1.0\Script\THC6_ctrl.cs" />
+    <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\EnemyDemo.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\MaterialType.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPSFireManager.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\VitalsBase.cs" />
     <Compile Include="Assets\Scripts\ObjectLookedAtByPlayer.cs" />
-    <Compile Include="Assets\Scripts\KeyItemController.cs" />
+    <Compile Include="Assets\Scripts\Cupboard.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Models\Chest\Chest.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\KillPlayer.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSShaderFloatCurves.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\CanvasLook.cs" />
     <Compile Include="Assets\Vitals\Scripts\Utility\VitalsSaveUtility.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\Enemies\CrabMonster\Scripts\Rikayon.cs" />
     <Compile Include="Assets\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\Piloto Studio\Readme\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\KeyDoor\KeyInventory.cs" />
+    <Compile Include="Assets\Scripts\KeyDoor\KeyItemController.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\MenuStuff.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
     <Compile Include="Assets\Scripts\Interactor.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\Health.cs" />
-    <Compile Include="Assets\Scripts\KeyInventory.cs" />
+    <Compile Include="Assets\Scripts\LowHealthDestructableObjects.cs" />
+    <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSShaderColorGradient.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\Sway.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Vitals\Scripts\Utility\VitalsUtility.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
     <Compile Include="Assets\Scripts\NumberGenerator.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\DamagePlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSLazer.shader" />
     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\PixelatedFX.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\Particles.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\Biplanar.shader" />
+    <None Include="Assets\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
+    <None Include="Assets\Enemies\CrabMonster\DOCUMENTATION.txt" />
     <None Include="Assets\Piloto Studio\Shaders\SimplyToon_Piloto\Simply Toon.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\MeshOverlayFX.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Add Scroll.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\UberShader_Alpha.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPS_UberDecal.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\BasicHorrorGameAssets\Scripts\ReadMe.txt" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\AlphaBlendedAnim.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSGlowAdditive.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\UberFX.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSDistortionGlass.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Abandoned_Asylum\Read_me.txt" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSDistortionParticles.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSDistortionWaterParticles.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\ParallaxVFX.shader" />
     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\UberShader_Additive.shader" />
     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\Tutorial.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
+    <None Include="Assets\JMO Assets\WarFX\!WarFX Readme.txt" />
     <None Include="Assets\Piloto Studio\Shaders\PBR_Piloto\PBR_UberShader.shader" />
     <None Include="Assets\Piloto Studio\Shaders\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
     <None Include="Assets\StoneWalls\readme.txt" />
     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\Screenspace_Alpha.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\Leafs.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\PBS Barrels and Crates\readme.txt" />
+    <None Include="Assets\Enemies\FourLeggedMonster\Horror_creature6_v1.0\THC6_readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -963,6 +1049,58 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
       <Private>False</Private>
@@ -977,14 +1115,6 @@
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
@@ -1003,64 +1133,36 @@
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

@@ -11,6 +11,7 @@ using System.Net;
 public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
+    private CapsuleCollider playerCollider;
 
     #region Camera Movement Variables
 
@@ -105,11 +106,24 @@ public class FirstPersonController : MonoBehaviour
     public float crouchHeight = .75f;
     public float speedReduction = .5f;
 
+    public float standingColliderHeight = 2.0f; // Default standing height
+    public float crouchingColliderHeight = 1.0f; // Reduced height when crouching
+    public float standingCameraYOffset = 0.6f; // Default camera height offset when standing
+    public float crouchingCameraYOffset = 0.3f; // Reduced camera height offset when crouching
+
     // Internal Variables
     private bool isCrouched = false;
-    private Vector3 originalScale;
 
     #endregion
+
+    #region Ladder
+
+    public float climbSpeed = 2f;
+    public LayerMask ladderLayer;
+    private bool isOnLadder = false;
+
+    #endregion
+
     #endregion
 
     #region Head Bob
@@ -128,12 +142,12 @@ public class FirstPersonController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        playerCollider = GetComponent<CapsuleCollider>();
 
         crosshairObject = GetComponentInChildren<Image>();
 
         // Set internal variables
         playerCamera.fieldOfView = fov;
-        originalScale = transform.localScale;
         jointOriginalPos = joint.localPosition;
 
         if (!unlimitedSprint)
@@ -231,10 +245,12 @@ public class FirstPersonController : MonoBehaviour
                 if (!isZoomed)
                 {
                     isZoomed = true;
+                    crosshairObject.gameObject.SetActive(false);
                 }
                 else
                 {
                     isZoomed = false;
+                    crosshairObject.gameObject.SetActive(true);
                 }
             }
 
@@ -245,10 +261,12 @@ public class FirstPersonController : MonoBehaviour
                 if (Input.GetKeyDown(zoomKey))
                 {
                     isZoomed = true;
+                    crosshairObject.gameObject.SetActive(false);
                 }
                 else if (Input.GetKeyUp(zoomKey))
                 {
                     isZoomed = false;
+                    crosshairObject.gameObject.SetActive(true);
                 }
             }
 
@@ -355,6 +373,39 @@ public class FirstPersonController : MonoBehaviour
         if (enableHeadBob)
         {
             HeadBob();
+        }
+
+        LadderClimb();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Ladder"))
+        {
+            isOnLadder = true;
+            rb.useGravity = false; // Disable gravity while climbing
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Ladder"))
+        {
+            isOnLadder = false;
+            rb.useGravity = true; // Re-enable gravity when not climbing
+        }
+    }
+
+    private void LadderClimb()
+    {
+        if (isOnLadder)
+        {
+            float verticalInput = Input.GetAxis("Vertical");
+            Vector3 climbDirection = new Vector3(0, verticalInput * climbSpeed, 0);
+            transform.position += climbDirection * Time.deltaTime;
+
+            isWalking = false;
+            isSprinting = false;
         }
     }
 
@@ -471,22 +522,26 @@ public class FirstPersonController : MonoBehaviour
 
     private void Crouch()
     {
-        // Stands player up to full height
-        // Brings walkSpeed back up to original speed
+        // Calculate the crouching collider height based on the crouchHeight scale factor
+        float crouchingColliderHeight = standingColliderHeight * crouchHeight; // Assuming crouchHeight is a scale factor (e.g., 0.75)
+
         if (isCrouched)
         {
-            transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
+            // Standing up
+            playerCollider.height = standingColliderHeight;
+            // Reset the camera position to its original Y position
+            joint.transform.localPosition = new Vector3(joint.transform.localPosition.x, jointOriginalPos.y, joint.transform.localPosition.z);
             walkSpeed /= speedReduction;
-
             isCrouched = false;
         }
-        // Crouches player down to set height
-        // Reduces walkSpeed
         else
         {
-            transform.localScale = new Vector3(originalScale.x, crouchHeight, originalScale.z);
+            // Crouching down
+            playerCollider.height = crouchingColliderHeight;
+            // Lower the camera by 25% of the standing height
+            float cameraCrouchOffset = standingColliderHeight * 0.25f * crouchHeight; // Adjust this formula as needed
+            joint.transform.localPosition = new Vector3(joint.transform.localPosition.x, jointOriginalPos.y - cameraCrouchOffset, joint.transform.localPosition.z);
             walkSpeed *= speedReduction;
-
             isCrouched = true;
         }
     }
@@ -612,6 +667,7 @@ public class FirstPersonControllerEditor : Editor
 
         GUI.enabled = fpc.playerCanMove;
         fpc.walkSpeed = EditorGUILayout.Slider(new GUIContent("Walk Speed", "Determines how fast the player will move while walking."), fpc.walkSpeed, .1f, fpc.sprintSpeed);
+        fpc.climbSpeed = EditorGUILayout.Slider(new GUIContent("Climb Speed", "Determines how fast the player will move while climbing."), fpc.climbSpeed, .1f, fpc.sprintSpeed);
         GUI.enabled = true;
 
         EditorGUILayout.Space();

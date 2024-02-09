@@ -15,8 +15,8 @@ MonoBehaviour:
   name: P40
   damage: 22
   maxDistance: 200
-  currentAmmo: 31
-  magSize: 31
+  currentAmmo: 100
+  magSize: 100
   fireRate: 600
   reloadTime: 1.5
   reloading: 0
