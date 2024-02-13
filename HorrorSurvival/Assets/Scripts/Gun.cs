@@ -7,22 +7,25 @@ public class Gun : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] gunData gunData;
-    [SerializeField] private Transform muzzle;
     [SerializeField] private Transform muzzleEffect;
 
     public ImpactInfo[] ImpactElemets = new ImpactInfo[0];
     [Space]
     public GameObject ImpactEffect;
 
+    public AudioClip GunFire;
+    private AudioSource audioSource;
+
     bool isCrouching = false;
     float timeSinceLastShot;
 
     private void Start()
     {
-        PlayerShoot.shootInput += Shoot;
-        PlayerShoot.reloadInput += StartReload;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-        gunData.reloading = false; //Makes sure the gunData reloading bool doesn't start as true
+        audioSource = player.GetComponent<AudioSource>();
+
+        gunData.reloading = false; //Makes sure the gunData reloading bool doesn't start as true  
     }
 
     public void StartReload()
@@ -49,36 +52,34 @@ public class Gun : MonoBehaviour
         {
             if (CanShoot())
             {
+                PlaySound(GunFire);
                 if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hitInfo, gunData.maxDistance))
                 {
                     IDamageable damageable = hitInfo.transform.GetComponent<IDamageable>();
                     damageable?.Damage(gunData.damage);
 
-                    if (gunData.currentAmmo > 1) // Check if there will be ammo left after this shot
+                    /*The ImpactEffect was somehow running the shoot function multiple times when shooting an enemy, 
+                        resulting in the player dealing massive damage to enemies almost one shooting them,
+                        this removes the ImpactEffect for objects with Enemy tags.*/
+                    if (!hitInfo.collider.CompareTag("Enemy"))
                     {
-                        /*The ImpactEffect was somehow running the shoot function multiple times when shooting an enemy, 
-                          resulting in the player dealing massive damage to enemies almost one shooting them,
-                          this removes the ImpactEffect for objects with Enemy tags.*/
-                        if (!hitInfo.collider.CompareTag("Enemy"))
-                        {
-                            var effect = GetImpactEffect(hitInfo.transform.gameObject);
-                            if (effect == null)
-                                return;
-                            var effectIstance = Instantiate(effect, hitInfo.point, new Quaternion()) as GameObject;
-                            effectIstance.transform.LookAt(hitInfo.point + hitInfo.normal);
-                            Destroy(effectIstance, 20);
-                        }
-                        var impactEffectIstance = Instantiate(ImpactEffect, muzzleEffect.position, muzzleEffect.rotation) as GameObject;
-
-                        Destroy(impactEffectIstance, 4);
+                        var effect = GetImpactEffect(hitInfo.transform.gameObject);
+                        if (effect == null)
+                            return;
+                        var effectIstance = Instantiate(effect, hitInfo.point, new Quaternion()) as GameObject;
+                        effectIstance.transform.LookAt(hitInfo.point + hitInfo.normal);
+                        Destroy(effectIstance, 20);
                     }
+                    var impactEffectIstance = Instantiate(ImpactEffect, muzzleEffect.position, muzzleEffect.rotation) as GameObject;
+
+                    Destroy(impactEffectIstance, 4); 
                 }
 
                 gunData.currentAmmo--;
                 timeSinceLastShot = 0;
                 OnGunShoot();
 
-                Debug.DrawRay(muzzle.position, muzzle.forward * gunData.maxDistance, Color.red, 1.0f);
+                Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * gunData.maxDistance, Color.red, 1.0f);
             }
         }
         else
@@ -91,7 +92,7 @@ public class Gun : MonoBehaviour
     {
         timeSinceLastShot += Time.deltaTime;
 
-        Debug.DrawRay(muzzle.position, muzzle.forward * gunData.maxDistance, Color.green, 0.1f);
+        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * gunData.maxDistance, Color.green, 0.1f);
     }
 
     [System.Serializable]
@@ -104,14 +105,24 @@ public class Gun : MonoBehaviour
     GameObject GetImpactEffect(GameObject impactedGameObject)
     {
         var materialType = impactedGameObject.GetComponent<MaterialType>();
+
         if (materialType == null)
             return null;
+
         foreach (var impactInfo in ImpactElemets)
         {
             if (impactInfo.MaterialType == materialType.TypeOfMaterial)
                 return impactInfo.ImpactEffect;
         }
         return null;
+    }
+
+    private void PlaySound(AudioClip soundClip)
+    {
+        audioSource.Stop();
+
+        audioSource.clip = soundClip;
+        audioSource.Play(); 
     }
 
     private void OnGunShoot()

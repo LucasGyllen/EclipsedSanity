@@ -11,7 +11,8 @@ public class ExploadingBarrel : MonoBehaviour, IDamageable
     public float upForceMax = 0.5f;
     public bool autoDestroy = true;
     public float lifeTime = 5.0f;
-    public float explosionDamage = 50f; // Damage dealt by the explosion to nearby entities
+    public float explosionDamageEnemies = 200f;
+    public float explosionDamagePlayer = 10f;
 
     public void Damage(float damage)
     {
@@ -42,14 +43,23 @@ public class ExploadingBarrel : MonoBehaviour, IDamageable
         foreach (var hitCollider in colliders)
         {
             // Check if the collider has a tag of "Enemy" or "Player"
-            if (hitCollider.CompareTag("Enemy") || hitCollider.CompareTag("Player"))
+            if (hitCollider.CompareTag("Enemy"))
             {
                 // Attempt to get an IDamageable component on the collider's GameObject
                 IDamageable damageable = hitCollider.GetComponent<IDamageable>();
                 if (damageable != null)
                 {
                     // Apply damage to the entity
-                    damageable.Damage(explosionDamage);
+                    damageable.Damage(explosionDamageEnemies);
+                }
+            }
+            else if (hitCollider.CompareTag("Player"))
+            {
+                IDamageable damageable = hitCollider.GetComponent<IDamageable>();
+                if (damageable != null)
+                {
+                    // Apply damage to the entity
+                    damageable.Damage(explosionDamagePlayer);
                 }
             }
         }

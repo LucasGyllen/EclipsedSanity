@@ -11,7 +11,7 @@ public class DestroyOnShot : MonoBehaviour, IDamageable
     public float upForceMin = 0.0f;
     public float upForceMax = 0.5f;
 
-    public bool autoDestroy = true;
+    public bool autoDestroy = false;
     public float lifeTime = 5.0f;
 
     [SerializeField] private float health = 1f;
@@ -25,7 +25,7 @@ public class DestroyOnShot : MonoBehaviour, IDamageable
             explodedPrefab,
             gameObject.transform.position,
             gameObject.transform.rotation
-        );
+            );
 
             // get the explosion component on the new object
             ExplodeBarrel explodeComp = go.GetComponent<ExplodeBarrel>();

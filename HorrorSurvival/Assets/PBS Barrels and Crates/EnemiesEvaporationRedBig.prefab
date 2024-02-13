@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23000014239082858}
   - component: {fileID: 54000013087935528}
   - component: {fileID: 64000010532164660}
+  - component: {fileID: 3784367406134925072}
   m_Layer: 0
   m_Name: WoodenCrate_BrokenSmall.013_cell.005
   m_TagString: Untagged
@@ -134,6 +135,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 44cf6c0fc05c5433f88a685d1de9c913, type: 3}
+--- !u!114 &3784367406134925072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011742326518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86c216f014d903439060cd429cb53a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TypeOfMaterial: 5
 --- !u!1 &1000012471779828
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +216,7 @@ GameObject:
   - component: {fileID: 23000011903383088}
   - component: {fileID: 54000011730043808}
   - component: {fileID: 64000013712258756}
+  - component: {fileID: 3772735395554963034}
   m_Layer: 0
   m_Name: WoodenCrate_BrokenSmall.013_cell
   m_TagString: Untagged
@@ -323,6 +338,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300008, guid: 44cf6c0fc05c5433f88a685d1de9c913, type: 3}
+--- !u!114 &3772735395554963034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012536121882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86c216f014d903439060cd429cb53a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TypeOfMaterial: 5
 --- !u!1 &1000013312949280
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +364,7 @@ GameObject:
   - component: {fileID: 23000013383188414}
   - component: {fileID: 54000011302267256}
   - component: {fileID: 64000011560293986}
+  - component: {fileID: 1690033811638759942}
   m_Layer: 0
   m_Name: WoodenCrate_BrokenSmall.013_cell.003
   m_TagString: Untagged
@@ -457,6 +486,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300004, guid: 44cf6c0fc05c5433f88a685d1de9c913, type: 3}
+--- !u!114 &1690033811638759942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013312949280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86c216f014d903439060cd429cb53a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TypeOfMaterial: 5
 --- !u!1 &1000013448147132
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +512,7 @@ GameObject:
   - component: {fileID: 23000012185142790}
   - component: {fileID: 54000011679939526}
   - component: {fileID: 64000010074029328}
+  - component: {fileID: 5249383314460354000}
   m_Layer: 0
   m_Name: WoodenCrate_BrokenSmall.013_cell.009
   m_TagString: Untagged
@@ -591,6 +634,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 44cf6c0fc05c5433f88a685d1de9c913, type: 3}
+--- !u!114 &5249383314460354000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013448147132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86c216f014d903439060cd429cb53a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TypeOfMaterial: 5
 --- !u!1 &1000014087344254
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +660,7 @@ GameObject:
   - component: {fileID: 23000010991660860}
   - component: {fileID: 54000013848622574}
   - component: {fileID: 64000014166456520}
+  - component: {fileID: 5438879887539979438}
   m_Layer: 0
   m_Name: WoodenCrate_BrokenSmall.013_cell.002
   m_TagString: Untagged
@@ -725,3 +782,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300006, guid: 44cf6c0fc05c5433f88a685d1de9c913, type: 3}
+--- !u!114 &5438879887539979438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000014087344254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86c216f014d903439060cd429cb53a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TypeOfMaterial: 5

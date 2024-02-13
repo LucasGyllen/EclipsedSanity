@@ -58,11 +58,12 @@
     <Compile Include="Assets\Scripts\EToOpenDoorController.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Vitals\Demo\Input\Input.cs" />
-    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\EnemyHealth.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\ChainsawEnemyController.cs" />
     <Compile Include="Assets\Scripts\PlayerLookingAtObject.cs" />
     <Compile Include="Assets\Enemies\CrabMonster\LB3DGameManager.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\Pistol.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\Stamina.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\UseChest.cs" />
     <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSRandomRotateAngle.cs" />
     <Compile Include="Assets\PBS Barrels and Crates\Scripts\DestroyBelowY.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Rendering\FPS_CustomLight.cs" />
     <Compile Include="Assets\PBS Barrels and Crates\Scripts\DestroyOnHit.cs" />
     <Compile Include="Assets\Scripts\WeaponSwaying.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyHealth.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\StaminaRegeneration.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\VitalsHook.cs" />
     <Compile Include="Assets\PBS Barrels and Crates\Scripts\DestroyProps\ExploadingBarrel.cs" />
@@ -131,10 +133,11 @@
     <Compile Include="Assets\BasicHorrorGameAssets\Models\Chest\Chest.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\KillPlayer.cs" />
+    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\ChainsawHealth.cs" />
+    <Compile Include="Assets\Scripts\Enemies\DamagePlayer.cs" />
     <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSShaderFloatCurves.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\CanvasLook.cs" />
     <Compile Include="Assets\Vitals\Scripts\Utility\VitalsSaveUtility.cs" />
-    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Enemies\CrabMonster\Scripts\Rikayon.cs" />
     <Compile Include="Assets\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\Piloto Studio\Readme\Scripts\Readme.cs" />
@@ -152,7 +155,6 @@
     <Compile Include="Assets\Vitals\Scripts\Utility\VitalsUtility.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
     <Compile Include="Assets\Scripts\NumberGenerator.cs" />
-    <Compile Include="Assets\BasicHorrorGameAssets\Scripts\DamagePlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -199,6 +201,7 @@
     <None Include="Assets\Abandoned_Asylum\Read_me.txt" />
     <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSDistortionParticles.shader" />
     <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSDistortionWaterParticles.shader" />
+    <None Include="Assets\Survival Tools\ReadMe\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\ParallaxVFX.shader" />
     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\UberShader_Additive.shader" />

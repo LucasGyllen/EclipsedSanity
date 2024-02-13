@@ -48,6 +48,30 @@ public class WeaponSwitcher : MonoBehaviour
         }
     }
 
+    public void ShootActiveWeapon()
+    {
+        if (currentWeaponIndex >= 0 && currentWeaponIndex < weapons.Length)
+        {
+            Gun gunComponent = weapons[currentWeaponIndex].GetComponent<Gun>();
+            if (gunComponent != null)
+            {
+                gunComponent.Shoot();
+            }
+        }
+    }
+
+    public void ReloadActiveWeapon()
+    {
+        if (currentWeaponIndex >= 0 && currentWeaponIndex < weapons.Length)
+        {
+            Gun gunComponent = weapons[currentWeaponIndex].GetComponent<Gun>();
+            if (gunComponent != null)
+            {
+                gunComponent.StartReload();
+            }
+        }
+    }
+
     void UpdateWeaponActiveState()
     {
         for (int i = 0; i < weapons.Length; i++)

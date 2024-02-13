@@ -27,8 +27,22 @@ public class DestroyOnHit : MonoBehaviour
 			gameObject.transform.rotation
 		);
 
-		// get the explosion component on the new object
-		ExplodeBarrel explodeComp = go.GetComponent<ExplodeBarrel> ();
+        /*MaterialType materialTypeScript = go.GetComponent<MaterialType>();
+
+        if (materialTypeScript != null)
+        {
+            // Set the TypeOfMaterial to Wood or any other type you need
+            materialTypeScript.TypeOfMaterial = MaterialType.MaterialTypeEnum.Wood;
+            Debug.Log("YO");
+        }
+        else
+        {
+            // Optionally handle the case where the MaterialType script is not found on the instantiated GameObject
+            Debug.LogWarning("MaterialType script not found on the instantiated GameObject.");
+        }*/
+
+        // get the explosion component on the new object
+        ExplodeBarrel explodeComp = go.GetComponent<ExplodeBarrel> ();
 
 		// set desired properties
 		explodeComp.explosionForce = explosionForce;
