@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class Cupboard : MonoBehaviour, IInteractable
 {
-    private CupboardManager cupboardManager;
+    private Animator animator;
 
     private void Start()
     {
-        // Find the CupboardManager in the scene or set it some other way
-        cupboardManager = FindObjectOfType<CupboardManager>();
+        animator = GetComponent<Animator>();
     }
 
     public void Interact()
     {
-        // Let the manager handle the interaction
-        if (cupboardManager != null)
-        {
-            cupboardManager.ToggleDoors();
-        }
+        animator.Play("CupboardOpen", 0, 0.0f);
     }
 }

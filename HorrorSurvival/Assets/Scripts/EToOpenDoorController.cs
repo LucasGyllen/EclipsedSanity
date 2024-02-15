@@ -17,12 +17,12 @@ public class EToOpenDoorController : MonoBehaviour, IInteractable
     {
         if(!doorOpen)
         {
-            doorAnim.Play("FirstDoorOpenAnim", 0, 0.0f);
+            doorAnim.Play("DoorOpen", 0, 0.0f);
             doorOpen = true;
         }
         else
         {
-            doorAnim.Play("FirstDoorCloseAnim", 0, 0.0f);
+            doorAnim.Play("DoorClose", 0, 0.0f);
             doorOpen = false;
         }
     }

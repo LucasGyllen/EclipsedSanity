@@ -91,6 +91,7 @@
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\EnemyDamager.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\EnemySpawner.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\Interfaces\IRegeneration.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\Interactor.cs" />
     <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPSDemoReactivator.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\HealthDemoScene\DemoCharacter.cs" />
@@ -112,7 +113,6 @@
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\VitalsHook.cs" />
     <Compile Include="Assets\PBS Barrels and Crates\Scripts\DestroyProps\ExploadingBarrel.cs" />
     <Compile Include="Assets\PBS Barrels and Crates\Scripts\CrateGridBuilder.cs" />
-    <Compile Include="Assets\Scripts\CupboardManager.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
     <Compile Include="Assets\Piloto Studio\Readme\Scripts\ReadmeBehaviour.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\HealthRegeneration.cs" />
@@ -134,9 +134,10 @@
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\KillPlayer.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\ChainsawHealth.cs" />
-    <Compile Include="Assets\Scripts\Enemies\DamagePlayer.cs" />
+    <Compile Include="Assets\Scripts\HealPlayer.cs" />
     <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSShaderFloatCurves.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\CanvasLook.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Vitals\Scripts\Utility\VitalsSaveUtility.cs" />
     <Compile Include="Assets\Enemies\CrabMonster\Scripts\Rikayon.cs" />
     <Compile Include="Assets\Scripts\FirstPersonController.cs" />
@@ -145,7 +146,6 @@
     <Compile Include="Assets\Scripts\KeyDoor\KeyItemController.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\MenuStuff.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
-    <Compile Include="Assets\Scripts\Interactor.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\Health.cs" />
     <Compile Include="Assets\Scripts\LowHealthDestructableObjects.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />

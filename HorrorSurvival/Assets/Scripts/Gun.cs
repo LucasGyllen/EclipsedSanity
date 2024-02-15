@@ -15,6 +15,7 @@ public class Gun : MonoBehaviour
 
     public AudioClip GunFire;
     private AudioSource audioSource;
+    private Animator animator;
 
     bool isCrouching = false;
     float timeSinceLastShot;
@@ -25,7 +26,9 @@ public class Gun : MonoBehaviour
 
         audioSource = player.GetComponent<AudioSource>();
 
-        gunData.reloading = false; //Makes sure the gunData reloading bool doesn't start as true  
+        animator = GetComponent<Animator>();
+
+        gunData.reloading = false; //Makes sure the gunData reloading bool doesn't start as true
     }
 
     public void StartReload()
@@ -39,8 +42,10 @@ public class Gun : MonoBehaviour
     private IEnumerator Reload()
     {
         gunData.reloading = true;
+        animator.SetBool("IsReloading", true);
         yield return new WaitForSeconds(gunData.reloadTime);
         gunData.currentAmmo = gunData.magSize;
+        animator.SetBool("IsReloading", false);
         gunData.reloading = false;
     }
 
@@ -53,6 +58,8 @@ public class Gun : MonoBehaviour
             if (CanShoot())
             {
                 PlaySound(GunFire);
+                animator.Play("Shoot");
+
                 if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hitInfo, gunData.maxDistance))
                 {
                     IDamageable damageable = hitInfo.transform.GetComponent<IDamageable>();
