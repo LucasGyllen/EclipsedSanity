@@ -14,6 +14,8 @@ public class Gun : MonoBehaviour
     public GameObject ImpactEffect;
 
     public AudioClip GunFire;
+    public AudioClip GunReload;
+    public AudioClip GunEmpty;
     private AudioSource audioSource;
     private Animator animator;
 
@@ -43,6 +45,11 @@ public class Gun : MonoBehaviour
     {
         gunData.reloading = true;
         animator.SetBool("IsReloading", true);
+
+        //Plays sound if clip not full. Change in future so that this plays together with animation. If the "if" is removed this plays even when the gun is full.
+        if (!(gunData.currentAmmo >= gunData.magSize))
+            PlaySound(GunReload);
+
         yield return new WaitForSeconds(gunData.reloadTime);
         gunData.currentAmmo = gunData.magSize;
         animator.SetBool("IsReloading", false);
@@ -91,7 +98,12 @@ public class Gun : MonoBehaviour
         }
         else
         {
-            Debug.Log("Out of ammo!");
+            if(CanShoot())
+            {
+                PlaySound(GunEmpty);
+                timeSinceLastShot = 0;
+                Debug.Log("Out of ammo!");
+            }
         }
     }
 
