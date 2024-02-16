@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -55,6 +55,11 @@
     <UnityVersion>2022.3.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\EToOpenDoorController.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Vitals\Demo\Input\Input.cs" />
@@ -86,6 +91,7 @@
     <Compile Include="Assets\Scripts\TriggerDoorController.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
+    <Compile Include="Assets\AutoFootSteps\FootMaterialTag.cs" />
     <Compile Include="Assets\Scripts\Aim.cs" />
     <Compile Include="Assets\Scripts\KeyDoor\KeyRaycast.cs" />
     <Compile Include="Assets\Vitals\Demo\Scripts\EnemyDemoScene\EnemyDamager.cs" />
@@ -132,6 +138,7 @@
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Models\Chest\Chest.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\AutoFootSteps\AutoFootSteps.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\KillPlayer.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\ChainsawHealth.cs" />
     <Compile Include="Assets\Scripts\HealPlayer.cs" />
@@ -144,10 +151,12 @@
     <Compile Include="Assets\Piloto Studio\Readme\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\KeyDoor\KeyInventory.cs" />
     <Compile Include="Assets\Scripts\KeyDoor\KeyItemController.cs" />
+    <Compile Include="Assets\AutoFootSteps\FootProfile.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\MenuStuff.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\Health.cs" />
     <Compile Include="Assets\Scripts\LowHealthDestructableObjects.cs" />
+    <Compile Include="Assets\AutoFootSteps\Example\ExamplePlayerController.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo.cs" />
     <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSShaderColorGradient.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\Sway.cs" />
