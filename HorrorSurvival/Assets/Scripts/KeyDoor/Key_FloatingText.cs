@@ -26,8 +26,15 @@ public class NewBehaviourScript : MonoBehaviour
     {
         transform.rotation = Quaternion.LookRotation(transform.position - mainCam.transform.position); // Look at cam
         transform.position = unit.position + offset;
-        if (myKey.activeSelf == false) { 
+
+        if (myKey.activeSelf == false)
+        { // hide text when key is picked up
             gameObject.SetActive(false);
         }
+        else
+        {
+            gameObject.SetActive(true);
+        }
+
     }
 }
