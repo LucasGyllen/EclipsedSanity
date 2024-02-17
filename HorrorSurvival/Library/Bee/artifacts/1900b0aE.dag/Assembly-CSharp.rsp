@@ -426,6 +426,7 @@
 "Assets/Scripts/KeyDoor/KeyInventory.cs"
 "Assets/Scripts/KeyDoor/KeyItemController.cs"
 "Assets/Scripts/KeyDoor/KeyRaycast.cs"
+"Assets/Scripts/KeyDoor/Key_FloatingText.cs"
 "Assets/Scripts/LowHealthDestructableObjects.cs"
 "Assets/Scripts/NumberGenerator.cs"
 "Assets/Scripts/ObjectLookedAtByPlayer.cs"

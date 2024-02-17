@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\PlayerShoot.cs" />
     <Compile Include="Assets\Scripts\KeyDoor\KeyDoorController.cs" />
     <Compile Include="Assets\PBS Barrels and Crates\Scripts\ExplodeBarrel.cs" />
+    <Compile Include="Assets\Scripts\KeyDoor\Key_FloatingText.cs" />
     <Compile Include="Assets\PBS Barrels and Crates\Scripts\MoveCamForward.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\Interfaces\IVitalsComponent.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\Death-Main-Menu.cs" />
