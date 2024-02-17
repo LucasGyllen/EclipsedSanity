@@ -8,7 +8,7 @@ public class NewBehaviourScript : MonoBehaviour
     Transform unit;
     Transform worldSpaceCanvas;
 
-    [SerializeField] private GameObject myKey = null;
+    //[SerializeField] private GameObject myKey = null;
 
     public Vector3 offset;
     // Start is called before the first frame update
@@ -27,14 +27,14 @@ public class NewBehaviourScript : MonoBehaviour
         transform.rotation = Quaternion.LookRotation(transform.position - mainCam.transform.position); // Look at cam
         transform.position = unit.position + offset;
 
-        if (myKey.activeSelf == false)
-        { // hide text when key is picked up
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            gameObject.SetActive(true);
-        }
+        //if (myKey.activeSelf == false)
+        //{ // hide text when key is picked up
+        //    gameObject.SetActive(false);
+        //}
+        //else
+        //{
+        //    gameObject.SetActive(true);
+        //}
 
     }
 }
