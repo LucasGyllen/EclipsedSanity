@@ -121,6 +121,7 @@
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
     <Compile Include="Assets\Piloto Studio\Readme\Scripts\ReadmeBehaviour.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\HealthRegeneration.cs" />
+    <Compile Include="Assets\Scripts\Key_FloatingText.cs" />
     <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPS_Decal.cs" />
     <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPSDemoGUI.cs" />
     <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Rendering\FPS_UseLight.cs" />
