@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace KeySystem
@@ -9,8 +10,8 @@ namespace KeySystem
         private bool doorOpen = false;
 
         [Header("Animation Names")]
-        [SerializeField] private string DoorOpen = "FirstDoorOpenAnim";
-        [SerializeField] private string DoorClose = "FirstDoorCloseAnim";
+        [SerializeField] private string DoorOpen = "DoorOpen";
+        [SerializeField] private string DoorClose = "DoorClose";
 
         [SerializeField] private int timeToShowUI = 1;
         [SerializeField] private GameObject showDoorLockedUI = null;
