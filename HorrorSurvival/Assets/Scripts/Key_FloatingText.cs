@@ -10,6 +10,7 @@ public class NewBehaviourScript : MonoBehaviour
     Transform worldSpaceCanvas;
 
     [SerializeField] private GameObject key = null;
+    [SerializeField] private Canvas canvas = null;
 
     public Vector3 offset;
     // Start is called before the first frame update
@@ -17,7 +18,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         mainCam = Camera.main.transform;
         unit = transform.parent;
-        worldSpaceCanvas = GameObject.FindObjectOfType<Canvas>().transform;
+        worldSpaceCanvas = canvas.transform;
 
         transform.SetParent(worldSpaceCanvas);
     }

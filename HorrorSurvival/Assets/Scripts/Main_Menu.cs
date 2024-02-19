@@ -11,9 +11,9 @@ public class Main_Menu : MonoBehaviour
         SceneManager.LoadSceneAsync(1);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void QuitGame()
     {
-        
+        Application.Quit();
     }
+
 }
