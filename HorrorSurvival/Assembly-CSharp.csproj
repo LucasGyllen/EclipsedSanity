@@ -151,6 +151,7 @@
     <Compile Include="Assets\Scripts\KeyDoor\KeyInventory.cs" />
     <Compile Include="Assets\Scripts\KeyDoor\KeyItemController.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\MenuStuff.cs" />
+    <Compile Include="Assets\Scripts\Main_Menu.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsComponents\Health.cs" />
     <Compile Include="Assets\Scripts\LowHealthDestructableObjects.cs" />
