@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\EToOpenDoorController.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\Scripts\Healthbar.cs" />
     <Compile Include="Assets\Vitals\Demo\Input\Input.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\ChainsawEnemyController.cs" />
     <Compile Include="Assets\Scripts\PlayerLookingAtObject.cs" />

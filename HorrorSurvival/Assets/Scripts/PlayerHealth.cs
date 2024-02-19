@@ -6,6 +6,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 {
     [SerializeField] private float maxHealth = 100f;
     private float currentHealth;
+    public Healthbar healthbar;
 
     //public string nextSceneName; // Name of the next scene to load
     //public float delay = 0.5f; // Delay in seconds before loading the next scene
@@ -13,6 +14,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public void Start()
     {
         currentHealth = maxHealth;
+        healthbar.setMaxHealth(maxHealth);
     }
 
     public void Damage(float damage)
@@ -22,6 +24,8 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
         // Ensure health never drops below 0
         currentHealth = Mathf.Max(currentHealth, 0);
+
+        healthbar.setHealth(currentHealth);
 
         Debug.Log("health is now: " + currentHealth);
 
@@ -37,6 +41,8 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
         // Ensure health never exceeds maxHealth
         currentHealth = Mathf.Min(currentHealth, maxHealth);
+
+        healthbar.setHealth(currentHealth);
 
         Debug.Log($"Player healed, now has {currentHealth} HP.");
     }

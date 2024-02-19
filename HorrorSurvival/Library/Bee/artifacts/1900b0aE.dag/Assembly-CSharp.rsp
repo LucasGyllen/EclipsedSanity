@@ -425,6 +425,7 @@
 "Assets/Scripts/FirstPersonController.cs"
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/HealPlayer.cs"
+"Assets/Scripts/Healthbar.cs"
 "Assets/Scripts/Interfaces/IDamageable.cs"
 "Assets/Scripts/Interfaces/Interactor.cs"
 "Assets/Scripts/KeyDoor/KeyDoorController.cs"
