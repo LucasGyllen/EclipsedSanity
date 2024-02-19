@@ -4,6 +4,12 @@ public class ChainsawHealth : MonoBehaviour, IDamageable
 {
     [SerializeField] private float health = 200f;
 
+    public AudioClip deathSound;
+
+    private AudioSource audioSource;
+
+    private bool isDead = false;
+
     public void Damage(float damage)
     {
         Debug.Log($"Enemy took {damage} damage.");
@@ -12,6 +18,11 @@ public class ChainsawHealth : MonoBehaviour, IDamageable
         if (health <= 0)
         {
             Die();
+            if (!isDead)
+            {
+                PlaySound(deathSound);
+                isDead = true;
+            }
         }
     }
 
@@ -23,5 +34,15 @@ public class ChainsawHealth : MonoBehaviour, IDamageable
 
         // For example, you might destroy the enemy GameObject:
         gameObject.GetComponent<Animator>().SetBool("Death", true);
+
+    }
+
+    private void PlaySound(AudioClip soundClip)
+    {
+        if (!audioSource.isPlaying || audioSource.clip != soundClip)
+            {
+                audioSource.clip = soundClip;
+                audioSource.Play();
+            }
     }
 }
