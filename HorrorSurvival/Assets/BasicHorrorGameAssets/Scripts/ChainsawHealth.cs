@@ -6,6 +6,8 @@ public class ChainsawHealth : MonoBehaviour, IDamageable
 
     private bool isDead = false;
 
+    public AudioClip deathClip;
+
     public void Damage(float damage)
     {
         Debug.Log($"Enemy took {damage} damage.");
@@ -17,6 +19,7 @@ public class ChainsawHealth : MonoBehaviour, IDamageable
             if (!isDead)
             {
                 isDead = true;
+                AudioSource.PlayClipAtPoint(deathClip, transform.position);
             }
         }
     }
