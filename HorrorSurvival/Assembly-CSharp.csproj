@@ -112,6 +112,7 @@
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
     <Compile Include="Assets\BasicHorrorGameAssets\Scripts\LanturnPickUp.cs" />
     <Compile Include="Assets\Vitals\Scripts\VitalsCore\RegenerationBase.cs" />
+    <Compile Include="Assets\Scripts\GameManager\PauseManager.cs" />
     <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Rendering\FPS_CustomLight.cs" />
     <Compile Include="Assets\PBS Barrels and Crates\Scripts\DestroyOnHit.cs" />
     <Compile Include="Assets\Scripts\WeaponSwaying.cs" />

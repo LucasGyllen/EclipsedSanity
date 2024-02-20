@@ -423,6 +423,7 @@
 "Assets/Scripts/Enemies/EnemyHealth.cs"
 "Assets/Scripts/EToOpenDoorController.cs"
 "Assets/Scripts/FirstPersonController.cs"
+"Assets/Scripts/GameManager/PauseManager.cs"
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/HealPlayer.cs"
 "Assets/Scripts/Healthbar.cs"
