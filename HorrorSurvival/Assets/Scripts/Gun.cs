@@ -100,6 +100,7 @@ public class Gun : MonoBehaviour
             {
                 PlaySound(gunEmpty);
                 timeSinceLastShot = 0;
+                animator.Play("Shoot");
                 Debug.Log("Out of ammo!");
             }
         }
